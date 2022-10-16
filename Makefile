@@ -40,7 +40,7 @@ event-source-mapping:
 signal-fruit:
 	aws sqs send-message --queue-url http://localhost:4566/000000000000/audit-fruits --message-body '{"source_id": "1d952b94-a5db-4d63-a500-b486dd96e8b2","name": "lemon","variety": "lima","price": 2.50}' --endpoint-url http://localhost:4566 --region us-east-1
 scan-audit-fruits:
-	aws dynamodb scan --table-name audit_fruits --endpoint-url http://localhost:4566 --region us-east-1
+	aws dynamodb scan --table-name audit-fruits --endpoint-url http://localhost:4566 --region us-east-1
 clean-localstack:
 	docker-compose down --volumes
 lint-docker:

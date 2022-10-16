@@ -25,7 +25,7 @@ docker-compose down
 
 ```shell
 aws dynamodb scan \
---table-name audit_fruits \
+--table-name audit-fruits \
 --endpoint-url http://localhost:4566 \
 --region us-east-1
 ```
@@ -139,7 +139,7 @@ aws sqs send-message --queue-url http://localhost:4566/000000000000/fruits-queue
 
 ```shell
 aws dynamodb scan \
---table-name audit_fruits \
+--table-name audit-fruits \
 --endpoint-url http://localhost:4566 \
 --region us-east-1
 ```

@@ -12,7 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
 )
 
-const fruitsTable = "audit_fruits"
+const fruitsTable = "audit-fruits"
 
 // Setup contains dynamodb settings.
 type Setup struct {
